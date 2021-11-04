@@ -26,7 +26,7 @@
 
 
 <!-- (5) a "div" is like a window; you're basically telling the browser to make a container here, size 600 by 400 -->
-<div id="mapid" style="width: 1550px; height: 750px;"></div>
+<div id="mapid" style="width: 1550px; height: 8000px;"></div>
 
 <script>
 //(6) when you are outside of the head and outside of functions, you can use just two slashes to leave single-line comments like this and you don't need to close
@@ -50,23 +50,25 @@ L.tileLayer ('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ex
 
 //(11) this is how you define individual features on the map - a marker, a cirlce, a polygon. You could also call up a variable and point it to a hosted GIS file to load it in.
 //(12) note that each popup has preloaded text here. You could also have a variable that points attributes in a dataset to populate a popup; we will do this in the future
-	L.marker([40.819273, -96.702968]).addTo(mymap)
-		.bindPopup("<b>Hello world!</b><br />I open automatically.").openPopup();
+	L.marker([40.821981, -96.702548]).addTo(mymap) 
+		.bindPopup("<b>UNL</b><br /> Campus Recreation").openPopup();
 
 	L.circle([40.820618, -96.706187], 190, {
 		color: 'orange',
-		fillColor: '#f02',
+		fillColor: '#f50',
 		fillOpacity: 0.5
 	}).addTo(mymap).bindPopup("Memorial Stadium");
 	//(13)  notice that you can set the color of the outline by using major color names, as well as the FILL color with hex codes. With larger datasets, you'd spe
 
 
 	L.polygon([
-		[40.819803, -96.713788],
-		[40.829799, -96.713277],
-		[40.819789, -96.723257],
-		[40.819599, -96.703777]
-	]).addTo(mymap).bindPopup("I am a polygon.");
+		[40.822319, -96.703048], 
+		[40.821156, -96.703091],
+		[40.821149, -96.702098],
+		[40.821701, -96.701400],
+		[40.822586, -96.701427],
+		[40.822647, -96.702827] 
+	]).addTo(mymap).bindPopup("UNL Campus Recreation.");
 	//(14) three nodes - this is a triangle... you can add more nodes to the polygon by separating each with a comma, just make sure the last vertex terminates without a comma!!!
 
 
@@ -97,8 +99,7 @@ L.tileLayer ('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ex
 		color: 'green',
 		fillColor: '#f20',
 		fillOpacity: 0.5
-	}).addTo(mymap).bindPopup("Love Library");
-	
+	}).addTo(mymap).bindPopup("Love Library");	
 	
 //(17)note there at the bottom that you "addTo(mymap)" - addTo is a Leaflet function that adds a layer, and in parenthesis you tell it to add it to the variable "mymap," which is where all of your code is written.
 
