@@ -26,7 +26,7 @@
 
 
 <!-- (5) a "div" is like a window; you're basically telling the browser to make a container here, size 600 by 400 -->
-<div id="mapid" style="width: 1000px; height: 8000px;"></div>
+<div id="mapid" style="width: 1400px; height: 800px;"></div>
 
 <script>
 //(6) when you are outside of the head and outside of functions, you can use just two slashes to leave single-line comments like this and you don't need to close
@@ -99,7 +99,8 @@ L.tileLayer ('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ex
 		color: 'green',
 		fillColor: '#f20',
 		fillOpacity: 0.5
-	}).addTo(mymap).bindPopup("Love Library");	
+	}).addTo(mymap).bindPopup("Love Library");
+	
 	
 //(17)note there at the bottom that you "addTo(mymap)" - addTo is a Leaflet function that adds a layer, and in parenthesis you tell it to add it to the variable "mymap," which is where all of your code is written.
 
