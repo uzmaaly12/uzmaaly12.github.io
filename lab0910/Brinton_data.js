@@ -1,3 +1,4 @@
+var BrintonJson = [
 {
 "type": "FeatureCollection",
 "name": "Brinton_data",
@@ -1288,3 +1289,4 @@
 { "type": "Feature", "properties": { "name": "Opera House", "latitude": "41.198372", "longitude": "-92.093089", "time": "12/18/1908" }, "geometry": null }
 ]
 }
+]
