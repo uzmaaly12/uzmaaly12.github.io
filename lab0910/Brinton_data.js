@@ -1,4 +1,4 @@
-{
+ Brinton_data = {
 "type": "FeatureCollection",
 "name": "Brinton_data",
 "features": [
